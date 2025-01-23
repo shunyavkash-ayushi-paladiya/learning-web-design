@@ -325,6 +325,7 @@ body {
 
 .card-anchor{
     cursor: pointer;
+    text-decoration: none;
 }
 
 .card-head{
