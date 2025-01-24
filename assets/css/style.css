@@ -339,8 +339,7 @@ body {
     padding-top: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .cards{

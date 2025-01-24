@@ -1,0 +1,75 @@
+@media screen and (max-width:991px) {
+    .hero-inner{
+        gap: 68px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-unorderlist{
+       display: none;
+    }
+    .right-section{
+        padding: 30px 10px;
+    }
+    .hero-inner {
+        padding-top: 100px;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+    .left-section-para{
+       line-height: 1.3em;
+       font-size: 30px;
+    }
+    .right-section-para{
+        font-size: 26px;
+        text-align: center;
+    }
+    .inputs{
+        font-size: 12px;
+        width: 100%;
+    }
+    .inputs-1{
+        font-size: 14px;
+    }
+    .card-main{
+        padding-top: 25px;
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card-icon{
+        justify-content: unset;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .hero-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-section{
+        text-align: center;
+    }
+    .click-btn{
+        margin-left: 88px;
+    }
+    .labels{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-icon{
+        color: var(--theme-white);
+        position: absolute;
+        left: 60%;
+        right:0;
+        top:20%;
+    }
+    .labels-row-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-span{
+        font-size: 12px;
+    }
+}
