@@ -1,0 +1,124 @@
+@media screen and (max-width:768px) {
+    .right-section img{
+        display: none;
+    }
+    .header-unorderlist {
+        width: 100%;
+        top: 60px; 
+        left: 0;
+    }
+
+    .options.active .header-unorderlist {
+        display: block;
+        position: absolute;
+        background-color: var(--theme-white);
+        margin-top: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+        z-index: 1;
+    }
+
+    .header-unorderlist li{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .harmburger{
+        display: inline-block;
+    }
+
+    .header-unorderlist{
+        display: none;
+    }
+
+    .card-inner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .hero-text strong {
+        font-size: 60px;
+    }
+
+    .card-inner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .right-section img{
+       display: none;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .hero-text strong {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .visit-tailor-area {
+        margin: 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .visit-left-section {
+        width: 41%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .visit-left-section {
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .visit-right-section {
+        width: 100%;
+        height: 500px;
+        margin: 0px 0;
+    }
+    .visit-left-section{
+        width: 100%;
+        padding: 50px 30px;
+    }
+    .visits::before{
+        position: unset;
+    }
+    .visits{
+        margin:115px 0;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:575px){
+    .visits{
+        margin:115px 0;
+        display: block;
+    }
+    .visits::before{
+        position: unset;
+    }
+    .visit-left-section{
+        width: 100%;
+        padding: 50px 30px;
+    }
+    .visit-right-section {
+        width: 100%;
+        height: 500px;
+        margin: 0px 0;
+    }
+}

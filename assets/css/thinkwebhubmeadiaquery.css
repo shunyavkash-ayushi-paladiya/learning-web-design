@@ -1,6 +1,24 @@
-@media screen and (max-width:991px) {
-    .hero-inner{
-        gap: 68px;
+@media screen and (max-width:940px) {
+    .header-unorderlist{
+        gap: 16px;
+    }
+    .header-anchor {
+        font-size: 15px;
+        padding: 12px 11px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .header-unorderlist{
+        gap: 16px;
+    }
+    .header-anchor {
+        font-size: 15px;
+        padding: 12px 11px;
+    }
+    .header-list {
+        text-decoration: none;
+        font-size: 13px;
     }
 }
 
@@ -31,6 +49,11 @@
     .inputs-1{
         font-size: 14px;
     }
+
+    .hamburger-anchor{
+       display: inline-block;
+    }
+
     .card-main{
         padding-top: 25px;
         display:flex;
@@ -40,6 +63,38 @@
     .card-icon{
         justify-content: unset;
         align-items: flex-end;
+    }
+    .header-unorderlist {
+        width: 100%;
+        top: 60px; 
+        left: 0;
+    }
+
+    .header-options.active .header-unorderlist {
+        display: block;
+        position: absolute;
+        background-color: var(--theme-black);
+        margin-top: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        z-index: 1;
+    }
+
+    .header-unorderlist li{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .header-list{
+        color: var(--theme-white);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .service-icon{
+        padding-left: 346px;
     }
 }
 
@@ -71,5 +126,23 @@
     }
     .card-span{
         font-size: 12px;
+    }
+    .header-anchor {
+        display: none;
+    }
+    .service-icon{
+        padding-left: 175px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .service-icon{
+        padding-left: 150px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .service-icon{
+        padding-left: 120px;
     }
 }
