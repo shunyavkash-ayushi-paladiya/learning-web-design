@@ -1,7 +1,4 @@
 @media screen and (max-width:768px) {
-    .right-section img{
-        display: none;
-    }
     .header-unorderlist {
         width: 100%;
         top: 60px; 
@@ -18,6 +15,11 @@
         padding-bottom: 30px;
         z-index: 1;
     }
+
+    .right-section{
+        display: none;
+    }
+    
 
     .header-unorderlist li{
         margin-top: 30px;
@@ -51,12 +53,6 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding-top: 100px;
-    }
-}
-
-@media screen and (max-width:1024px){
-    .right-section img{
-       display: none;
     }
 }
 
