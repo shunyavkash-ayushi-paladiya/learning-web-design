@@ -156,7 +156,7 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (min-width:320px) and (max-width:575px){
     .hero-text strong {
         font-size: 31px;
     }
