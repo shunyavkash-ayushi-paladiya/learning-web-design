@@ -27,13 +27,17 @@ body {
     width: 100%;
 }
 
+.a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .header{
     position: fixed;
     top: 0;
     background-color: var(--theme-white);
     width: 100%;
     z-index: 999;
-    padding: 20px;
 }
 
 .header-inner{
@@ -42,7 +46,7 @@ body {
     gap: 20px;
     justify-content: space-between; 
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -75,6 +79,9 @@ body {
     font-size: 17px;
     text-transform: capitalize;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-anchor:hover{
@@ -529,4 +536,219 @@ body {
 
 .cards:hover .svg-icon-5{
     color: #f3268c;
+}
+
+.card-hover-inner{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.cards-hover img{
+    width: 100%;
+}
+
+.cards-hover{
+    position: relative;
+}
+
+.card-hover-text {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.23,1,.32,1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    left: 0; 
+    overflow: hidden;
+}
+
+.card-hover-text:hover{
+    opacity: 0.7;
+}
+
+
+.card-hover-text strong{
+    color: #fffbfb;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.card-hover-text span{
+    color: var(--theme-red);
+    font-size: 18px;
+    font-weight: 100; 
+}
+
+.cards-hover-a{
+    text-decoration: none;
+}
+
+.card-hover-buttons{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.view-it-btn{
+    background-color: var(--theme-red);
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.view-it-btn:hover{
+    background-color: #b11e2d;
+}
+
+.online-version-btn{
+    border: 1px solid #f5f5f5;
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 10px 20px;
+}
+
+.background{
+     position: absolute;
+     top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    transform: translateX(0%);
+}
+
+.primary-card-img img{
+    width: 100%;
+}
+
+.primary-inner{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.primary-card-text{
+    background-color: var(--theme-white);
+    position: absolute;
+    top: 75%;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    right: 0;
+}
+
+.date{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    padding-top: 40px;
+    border-bottom: 1px solid #d6d0d0;
+    padding-bottom: 20px;
+}
+
+.primary-card-img{
+    position: relative;
+}
+
+.secondary-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.comments{
+    color: #838080;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.primary-fonts{
+   padding:30px 100px ;
+   color: #000000;
+}
+
+.primary-fonts strong{
+    font-size: 45px;
+    font-family: "Raleway", serif;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.primary-fonts strong:hover{
+    color: #BE9278;
+}
+
+.primary-fonts span{
+    font-family: "Raleway", serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.primary-head{
+    font-family: "Raleway", serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.primary-a{
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fffbfb;
+  background-color: var(--theme-brown);
+  padding: 10px 20px;
+}
+
+.primary-a:hover{
+    background-color: #ad8269;
+}
+
+.video-section{
+    background-color: #2c2b2b;
+}
+
+.video-inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
 }
