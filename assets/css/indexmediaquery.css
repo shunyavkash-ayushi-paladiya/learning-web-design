@@ -73,12 +73,101 @@
         gap: 10px;
         margin-top: 100px;
     }
-
+    .banner-texts {
+        top: 18%;
+    }
+    .banner-text {
+        max-width: 523px;
+    }
+    .signup-inner{
+        border: none;
+    }
+    .signup-form {
+        width: 59%;
+    }
+    .signup-form-svg {
+        width: 40%;
+    }
 }
+
+@media screen and (max-width:1124px){
+    .forms{
+        top: 11%;
+    left: 10%;
+    }
+}
+
+@media screen and (max-width:940px) and (min-width:767px) {
+    .form-heading {
+        font-size: 20px;
+    }
+    .inputs{
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:575px) {
+    .signup-form {
+        width: 65%;
+    }
+    .signup-form-svg {
+        width: 40%;
+    }
+    .form-heading {
+        font-size: 25px;
+    }
+    .input-space {
+        gap: 6px;
+    }
+    .form-heading{
+        padding-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width:575px) and (min-width:320px) {
+    .form-heading {
+        font-size: 21px;
+        padding-bottom: 8px;
+    }
+    .inputs{
+        height: 37px;
+    }
+}
+
+@media screen and (max-width:367px) and (min-width:320px) {
+    .form-heading {
+        font-size: 21px;
+        padding-bottom: 8px;
+    }
+    .inputs{
+        height: 34px;
+    }
+    .form-heading {
+        font-size: 13px;
+    }
+    .inputs {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:320px){
+    .signup-inner{
+        border: none;
+    }
+    label {
+        font-size: 13px;
+    }
+}
+
 
 @media screen and (max-width:575px) {
     .hero-text strong {
         font-size: 60px;
+    }
+
+    .signup-form {
+        width: 100%;
     }
 
     .card-inner{
@@ -92,6 +181,9 @@
         grid-template-columns: repeat(1 , 1fr);
         gap: 10px;
         margin-top: 100px;
+    }
+    .signup-form-svg {
+        display: none;
     }
 }
 
@@ -157,7 +249,13 @@
 
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:320px) {
+    .banner-para span{
+        display: none;
+    }
+}
+
+@media screen and (max-width:430px) {
     .hero-text strong {
         font-size: 40px;
     }
@@ -165,8 +263,9 @@
         font-size: 16px;
     }
     .hero-text span {
-        font-size: 14px;
+        font-size: 15px;
     }
+   
 }
 
 @media screen and (min-width:320px) and (max-width:575px){
@@ -180,12 +279,42 @@
         font-size: 15px;
         padding: 24px 24px;
     }
+    .banner-img {
+        display: none;
+    }
+    .banner-texts {
+        top: 10%;
+        margin-right: 112px;
+    }
+    .banner-heading {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    .banner-para strong {
+        font-size: 12px;
+    }
+    .banner-img {
+        padding-top: 0px;
+    }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:320px) and (max-width:425px){
     .hero-btn {
         font-size: 15px;
         padding: 20px 15px;
+    }
+    .banner-para span{
+        display: none;
+    }
+    .banner-texts {
+        top: 27%;
+        margin-right: 53px;
+    }
+} 
+
+@media screen and (max-width:991px) and (min-width:780px) {
+    .banner-texts {
+        left: 10%;
     }
 }
 
@@ -195,6 +324,9 @@
     }
     .primary-fonts {
         padding: 30px 61px;
+    }
+    .banner-img{
+        left: 26%;
     }
 }
 
@@ -213,5 +345,11 @@
     
     .primary-fonts {
         padding: 30px 30px;
+    }
+    .banner-texts {
+        left: 18%;
+    }
+    .banner-img {
+        left: 31%;
     }
 }
