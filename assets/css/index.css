@@ -906,4 +906,65 @@ input::placeholder{
 
 .img-animation-inner{
     margin-top: 90px;
+    padding-bottom: 60px;
+}
+
+.cards-mains{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.cards-main{
+    background-color: white;
+    padding: 20px;
+}
+
+.images-text{
+    text-align: center;
+    padding-top: 63px;
+}
+
+.cards-head{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.img-main img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.img-main{
+    text-align: center;
+}
+
+.img-main img:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cards-paras{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.learn-more{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-bottom: 3px solid #b11e2d;
+}
+
+.learn-more:hover{
+    border-bottom: 3px solid #000000;
+}
+
+.cards-anchor{
+    text-align: center;
 }

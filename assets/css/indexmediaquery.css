@@ -88,6 +88,10 @@
     .signup-form-svg {
         width: 40%;
     }
+    .cards-mains{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media screen and (max-width:1124px){
@@ -245,6 +249,10 @@
     }
     .hero-text strong {
         font-size: 49px;
+    }
+    .cards-mains{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
