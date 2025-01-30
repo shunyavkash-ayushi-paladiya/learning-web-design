@@ -306,6 +306,9 @@
     .banner-para span{
         display: none;
     }
+    .primary-fonts strong {
+        font-size: 37px;
+    }
 }
 
 @media screen and (max-width:430px) {
@@ -400,7 +403,8 @@
         padding: 30px 30px;
     }
     .banner-texts {
-        left: 18%;
+        left: 14%;
+        top: 23%;
     }
     .banner-img {
         left: 31%;

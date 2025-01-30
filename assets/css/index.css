@@ -724,6 +724,10 @@ body {
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .primary-a{
@@ -753,137 +757,6 @@ video {
     height: 100%;
 }
 
-.banner{
-    margin-top: 60px;
-    position: relative;
-}
-
-.banner-texts{
-    position: absolute;
-    top: 39%;
-    right: 0;
-    left: 30%;
-}
-
-.banner-heading{
-    font-size: 30px;
-    color: #f5f5f5;
-    padding-bottom: 10px;
-}
-
-.banner-para strong{
-    font-size: 20px;
-    color: #f5f5f5;
-}
-
-.banner-para span{
-    color: #f5f5f5;
-    font-size: 16px;
-}
-
-.banner-text{
-    max-width: 620px;
-    text-align: center;
-}
-
-.banner-image{
-    width: 100%;
-}
-
-.banner-img {
-    position: absolute;
-    left: 20%;
-    padding-top: 30px;
-}
-
-.banner-img:hover{
-    animation-name: rotateme;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background-size: cover;
-}
-
-@keyframes rotateme {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.signup{
-    background-color: #fff;
-}
-
-.signup-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000000;
-    border-radius: 50px;
-    margin-top: 50px;
-    padding: 10px;
-    position: relative;
-}
-
-.signup-form{
-    width: 50%;
-    height: 100%;
-}
-
-.signup-form-svg{
-    width: 50%;
-    height: 100%;
-}
-
-.signup-form{
-    text-align: center;
-
-}
-
-.form-heading{
-    font-size: 32px;
-    font-family: "Libre Baskerville", serif;
-    padding-bottom: 40px;
-}
-
-label {
-    font-size: 19px;
-}
-
-.inputs{
-    border: 1px solid #000000;
-    border-radius: 20px;
-    height: 45px;
-}
-
-input::placeholder{
-    text-align: center;
-    font-size: 15px;
-}
-
-.input-space{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-}
-
-.forms {
-    position: absolute;
-    top: 22%;
-    left: 15%;
-}
-
-.signup-img img{
-    width: 100%;
-    border-radius: 30px;
-    opacity: 0.7;
-}
 
 .img-animation-head{
     font-weight: 700;
@@ -921,6 +794,8 @@ input::placeholder{
 .cards-main{
     background-color: white;
     padding: 20px;
+        object-fit: cover;
+        transition: all 0.4s ease-in-out;
 }
 
 .cards-main:hover .img-main img{
@@ -941,6 +816,8 @@ input::placeholder{
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
 }
 
 .img-main{
@@ -974,11 +851,10 @@ input::placeholder{
 }
 
 .form-inner{
-    border: 2px solid #000000;
+    border: 2px solid #000;
     border-radius: 50px;
     padding: 30px;
     text-align: center;
-    background-image: url(../images/images\ \(1\).jfif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -987,6 +863,7 @@ input::placeholder{
     text-transform: capitalize;
     font-family: "Libre Baskerville", serif;
     padding: 10px 0;
+    color: #000;
 }
 
 .input-div{
@@ -1000,17 +877,13 @@ input::placeholder{
 .form-input{
     width: 100%;
     height: 38px;
-    border-radius: 50px;
+    border-radius: 10px;
     border:1px solid #bab6b6;
-}
-
-.form-input:focus{
-    font-size: 20px;
-    text-align: center;
+    padding: 0 10px;
 }
 
 label{
-    color:var(--theme-white);
+    color:var(--theme-black);
     margin: 6px 0;
 }
 
@@ -1041,21 +914,22 @@ label span{
 
 .form-input-date{
     width: 100%;
-    border-radius: 50px;
-    border:1px solid #bab6b6;
+    border-radius: 10px;
+    border: 1px solid #bab6b6;
     height: 38px;
-    text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: #838080;
+    padding: 0 10px;
 }
 
 .form-input-teaxt{
     width: 100%;
     height: 100px;
     border-radius: 10px;
-    border:1px solid #bab6b6;
-    font-size: 16px;
-    color: #838080;
+    border: 1px solid #bab6b6;
+
+    color: #bab6b6;
+    /* font-size: 16px; */
     padding: 40px 0;
 }
 
@@ -1068,31 +942,35 @@ label span{
 
 .submit-button{
     text-decoration: none;
-    color: #d6d0d0;
-    background-color: #0a1977;
-    border: 1px solid #0a1977;
+    color: #fff;
+    background-color: #BE9278;
+    border: 1px solid #BE9278;
     border-radius: 6px;
     padding: 15px 30px;
 }
 
 .submit-button:hover{
-    background-color: rgb(19, 19, 241);
+    background-color: #ad8269;
 }   
 
 .reset-button{
     text-decoration: none;
-    color: #ebe5e5;
+    color: #000;
     border: 2px solid #cdc8c8;
     border-radius: 6px;
     padding: 15px 30px;
 }
 
 .reset-button:hover{
-    border: 2px solid #000000;
+    border: 2px solid #ad8269;
 }
 
-.form{
+.forms{
     margin-top: 80px;
+    padding: 57px 0;
+    background-image: url(../images/soft-brown-aesthetic-ju9o0v5amk1auca7.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .section{
