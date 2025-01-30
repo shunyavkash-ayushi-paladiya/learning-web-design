@@ -114,6 +114,29 @@
         padding-top: 0px;
         flex-direction: column;
     }
+    .sections-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_left {
+        width: 100%;
+    }
+    .section_right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1150px) and (min-width:320px) {
+    .section-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side {
+        width: 100%;
+    }
+    .right-side {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:1124px){

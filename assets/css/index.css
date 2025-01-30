@@ -1094,3 +1094,89 @@ label span{
 .form{
     margin-top: 80px;
 }
+
+.section{
+    background-color: #cac6c633;
+}
+
+.section-cards{
+    display: flex;
+    background-color: #fff;
+    margin-top: 46px;
+    padding: 30px;
+    gap: 10px;
+    box-shadow: 0px 15px 114px -26px rgba(85, 98, 164, 0.29);
+}
+
+.sections-left{
+    display: flex;
+    width: 100%;
+}
+
+.section_right img{
+    width: 100%;
+    height: 100%;
+}
+
+.section_left{
+   width: 50%;
+   height: 100%;
+}
+
+.section_right{
+    width: 50%;   
+}
+
+.section-inner{
+   margin-top: 70px;
+   padding: 40px;
+}
+
+.education{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #fcc747;
+    padding: 10px 15px;
+}
+
+.section-head{
+    padding-top: 25px;
+    font-size: 35px;
+}
+.years-a{
+    background: #ec116c;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.left-side-head{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.left-side{
+    width: 37%;
+}
+
+.right-side{
+    width: 73%;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.right-side-para{
+    color: #bab6b6;
+}
+
+span.left-side-span {
+    text-transform: uppercase;
+    font-weight: 100;
+}
