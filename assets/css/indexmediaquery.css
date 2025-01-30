@@ -92,6 +92,28 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .input-checkbox{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0px;
+    }
+    
+    .input-divs{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .input-checkboxs{
+        width: 18px;
+    }
+    
+    .input-gender{
+        display: flex;
+        gap: 20px;
+        padding-top: 0px;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:1124px){
