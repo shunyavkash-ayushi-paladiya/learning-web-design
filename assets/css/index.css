@@ -1203,31 +1203,61 @@ label span{
     align-items: center;
     gap: 15px;
     margin-top: 15px;
+
 }
 
 .submit-button{
     text-decoration: none;
     color: #fff;
     background-color: #9a755f;
-    border: 1px solid #BE9278;
+    border: 3px solid #838080;
     border-radius: 6px;
     padding: 15px 30px;
+    transform-origin: 50% 5em;
+    animation: wiggle 2s linear infinite;
 }
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 
 .submit-button:hover{
     background-color: #ad8269;
+    color: white;
+    border: 4px solid #e8dfdf;
 }   
 
 .reset-button{
     text-decoration: none;
     color: #000;
-    border: 2px solid #cdc8c8;
+    border: 4px solid #cdc8c8;
     border-radius: 6px;
     padding: 15px 30px;
 }
 
 .reset-button:hover{
-    border: 2px solid #ad8269;
+   background-color: white;
+   color: #ad8269;
 }
 
 .forms{
