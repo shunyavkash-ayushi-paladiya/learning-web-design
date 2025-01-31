@@ -54,13 +54,35 @@ body {
     font-weight: 600;
     font-size: 30px;
     text-transform: capitalize;
-    color: var(--theme-brown);
+    font-family: "Mukta", serif;
+}
 
+.logo:hover{
+    animation-name: rotates;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: cover;
+}
+
+@keyframes rotates {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
 }
 
 .header-a{
   text-decoration: none;
   color: var(--theme-brown);
+  border-bottom: 3px solid var(--theme-brown);
+}
+
+.header-a:hover{
+    color:#838080 ;
+    border-bottom: 3px solid #838080;
 }
 
 .header-unorderlist{
@@ -82,22 +104,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Exo 2", serif;
+    border: none;
 }
 
 .header-anchor:hover{
     color: var(--theme-brown);
+    border-bottom: 3px solid #BE9278;
 }
 
 .headers-a{
-    background-color: var(--theme-brown);
-    color: var(--theme-white);
-    padding: 20px 35px;
+    text-decoration: none;
+    color: var(--theme-black);
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Exo 2", serif;
+    border: 4px solid #cdc8c8;
+    position: relative;
+    background: #BE9278;
+    padding: 18px 30px;
+    border-radius: 10px;
 }
 
 .headers-a:hover{
-    color: var(--theme-white);
+    background-color: white;
+    color: var(--theme-brown);
+    border: 4px solid #efe5e5;
 }
-
+  
  .hero-images {
     position: absolute; 
     z-index: 0;
@@ -119,6 +157,8 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     background-size: cover;
+    background-color: black;
+    border-radius: 50px;
 }
 
 .hero-section {
@@ -149,11 +189,23 @@ body {
     position: relative;
     z-index: 0;
     width: 50%;
+    animation-name: slideright;
+    animation-duration: 3s;
+}
+
+@keyframes slideright {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .hero-text strong {
     font-size: 80px;
     font-weight: 600;
+    font-family: "MuseoModerno", serif;
     
 }
 
@@ -161,6 +213,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hero-inner{
@@ -195,16 +248,48 @@ body {
 .hero-btn{
     text-decoration: none;
     color: var(--theme-white);
-    background-color: var(--theme-brown);
+    background-color: var(--theme-black);
     padding: 25px 40px;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
-}
+    font-family: Helvetica, Arial, Sans-serif;
+    animation: wiggle 2s linear infinite;
+    position: absolute;
+    border: 4px solid rgb(214, 211, 207);
+    border-radius: 10px;
+    transform-origin: 50% 5em;
+  }
 
-.hero-btn:hover{
-    background-color: #ad8269;
-}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  .hero-btn:hover{
+    background-color: white;
+    color: #ad8269;
+    border: 4px solid #838080;
+  }
 
 .visits{
     position: relative;
@@ -222,7 +307,19 @@ body {
     z-index: -9;
     right: 0;
     top: 0;
+    animation-name: slideleft;
+    animation-duration: 3s;
 }
+
+@keyframes slideleft {
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
 
 .visit-right-section{
     background-image: url(../images/visit_bg.png.webp);
@@ -233,11 +330,33 @@ body {
     height: 570px;
     width: 50%;
     margin: 130px 0;
+    animation-name: slideright;
+    animation-duration: 2s;
+}
+
+@keyframes slideright {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .visit-left-section{
     width: 30%;
     padding: 20px 20px 20px 60px;
+    animation-name: slideleft;
+    animation-duration: 2s;
+}
+
+@keyframes slideleft {
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .visit-left-section h2{
@@ -266,19 +385,53 @@ body {
 .about-btn{
     text-decoration: none;
     color: var(--theme-white);
-    text-transform: capitalize;
     background-color: var(--theme-brown);
-    padding: 20px 30px;
-    font-size: 18px;
-}
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: Helvetica, Arial, Sans-serif;
+    animation: wiggle 2s linear infinite;
+    position: absolute;
+    border: 4px solid rgb(214, 211, 207);
+    border-radius: 10px;
+    transform-origin: 50% 5em;
+  }
 
-.about-btn:hover{
-    background-color: #ad8269;
-}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  .about-btn:hover{
+    background-color: white;
+    color: #ad8269;
+    border: 4px solid #838080;
+  }
 
 .card{
     background-color: #f7f7f7;
 }
+
 
 .cards{
     background-color: var(--theme-white);
@@ -291,7 +444,7 @@ body {
 }
 
 .cards:hover{
-    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .svg-icon{
@@ -624,7 +777,19 @@ body {
     flex-direction: column;
     text-align: center;
     background-color: black;
-    transform: translateX(0%);
+    animation: slidecardtext;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidecardtext {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .primary-card-img img{
