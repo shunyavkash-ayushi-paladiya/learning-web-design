@@ -306,9 +306,9 @@ body {
     height: 100%;
     z-index: -9;
     right: 0;
-    top: 0;
+    /* top: 0;
     animation-name: slideleft;
-    animation-duration: 3s;
+    animation-duration: 3s; */
 }
 
 @keyframes slideleft {
