@@ -778,20 +778,8 @@ body {
     flex-direction: column;
     text-align: center;
     background-color: black;
-    animation: slidecardtext;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-@keyframes slidecardtext {
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-}
 
 .primary-card-img img{
     width: 100%;
