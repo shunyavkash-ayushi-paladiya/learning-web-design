@@ -355,10 +355,19 @@
         font-size: 30px;
     }
     .visit-left-section h2 {
-        font-size: 45px;
+        font-size: 40px;
     }
     .about-btn{
-        padding: 25px 29px;
+        padding: 16px 20px;
+    }
+    .view-it-btn{
+        padding: 9px 9px;
+    }
+    .online-version-btn {
+        padding: 9px;
+    }
+    .card-hover-buttons{
+        gap: 9px;
     }
 }
 
@@ -433,5 +442,14 @@
     }
     .banner-img {
         left: 31%;
+    }
+    .view-it-btn{
+        padding: 9px 9px;
+    }
+    .online-version-btn {
+        padding: 9px;
+    }
+    .card-hover-buttons{
+        gap: 9px;
     }
 }
