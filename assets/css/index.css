@@ -1348,3 +1348,54 @@ span.left-side-span {
     position: relative;
 }
 
+.card-secondary{
+    background-color: #353333;
+    position: relative;
+}
+
+.secondary-card-inner{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.background-img{
+    position: absolute;
+}
+
+.images-1{
+    position: absolute;
+    bottom: -48%;
+    left: 1890%;
+}
+
+.images-2{
+    position: absolute;
+    bottom: 60%;
+    left: 1450%;
+    transition: all 1s ease-in-out linear;
+    animation-name: slidetopbottom;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.images-3{
+    position: absolute;
+    top: 40%;
+    right: 170%;
+    transition: all 1s ease-in-out linear;
+    animation-name: slidetopbottom;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slidetopbottom  {
+     0%{
+        transform: translateY(10%);
+     }
+     100%{
+        transform: translateY(30%);
+     }
+}
