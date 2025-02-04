@@ -1,0 +1,85 @@
+@media screen and (max-width:575px) {
+   
+    .headerunorderlist {
+        display: none;
+        position: absolute;
+        top: 124px;
+        left: 0;
+        width: 100%;
+        background-color: var(--theme-white);
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .headerunorderlist li {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .header .menu-btn:checked ~ .headerunorderlist {
+        display: flex;
+    }
+
+    .header .menu-icon {
+        display: inline-block;
+        color: white;
+    }
+    .header-a{
+        color: black;
+    }
+}
+
+@media screen and (max-width:780px){
+    .swiper-head {
+        font-size: 30px;
+    }
+    .swiper-text{
+        top: 36%;
+        left: 22%;
+    }
+    .logo img{
+        width: 96px;
+    }
+}
+
+@media screen and (max-width:628px) and (min-width:575px) {
+    .swiper-text{
+        left: 23%;
+    }
+    .swiper-head {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .swiper-text {
+        top: 55%;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .swiper-text {
+        top: 66%;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width:562px) {
+    .swiper-head {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1140px) and (min-width:1024px){
+    .swiper-text{
+        left: 27%;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .swiper-text {
+        left: 18%;
+    }
+}
