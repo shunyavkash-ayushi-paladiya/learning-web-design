@@ -28,6 +28,10 @@
     .header-a{
         color: black;
     }
+    .swiper-inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media screen and (max-width:780px){
@@ -84,9 +88,23 @@
     }
 }
 
-@media screen and (max-width:575px) {
-    .swiper-inner {
+
+@media screen and (max-width:768px) {
+    .cards-inner{
+        margin-top: 500px;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+     }
+     .card_price span::after{
+        border-top: 1px dashed #666;
+        display: block;
+        position: relative;
+        top: 19px;
+        width:65%;
+        content: "";
+        right: 0;
+     }
 }
+
+
