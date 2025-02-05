@@ -561,6 +561,7 @@ body {
  .main_box {
     position: absolute;
     height: 200px;
+    width: 100px;
     display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -616,7 +617,6 @@ body {
       opacity: 0;
     }
   }
-  
 
   .our-video{
     background-image: url(../images/video-bg.jpg);
