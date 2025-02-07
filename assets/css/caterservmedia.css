@@ -1,0 +1,122 @@
+@media screen and (max-width:1024px) {
+    .header_booknow{
+        display: none;
+    }
+    .header-inner{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:842px) and (min-width:768px) {
+    .hero_strong{
+        font-size: 70px;
+     }
+     .hero_anchor_booknow{
+        padding: 18px 30px;
+    }
+    
+    .hero_anchor_knowmore{
+        padding: 18px 30px; 
+    }
+}
+
+@media screen and (max-width:780px) {
+    .hamburger-anchor{
+        display: inline-block;
+     }
+
+     .header_unorderlist{
+        display: none;
+     }
+
+     .header_unorderlist {
+        width: 100%;
+        top: 60px; 
+        left: 0;
+    }
+
+    .header-options.active .header_unorderlist {
+        display: block;
+        position: absolute;
+        background-color: var(--theme-pink);
+        margin-top: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        z-index: 1;
+    }
+
+    .header_unorderlist li{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .header-list{
+        color: var(--theme-white);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .header_search{
+        display: none;
+    }
+
+    .hero_inner{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero_text{
+        width: 100%;
+    }
+    
+    .hero_img{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:634px){
+    .hero_strong{
+        font-size: 74px;
+    }
+}
+
+@media screen and (max-width:575px){
+     .hero_strong{
+        font-size: 45px;
+     }
+}
+
+@media screen and (max-width:425px){
+    .hero_anchor_booknow{
+        padding: 18px 30px;
+    }
+    
+    .hero_anchor_knowmore{
+        padding: 18px 30px; 
+    }
+}
+
+@media screen and (max-width:375px) {
+    .hero_anchor_booknow{
+        padding: 16px 7px;
+    }
+    
+    .hero_anchor_knowmore{
+        padding: 16px 7px; 
+    }
+}
+
+@media screen and (max-width:320px) {
+    .hero_anchor_booknow{
+        padding: 16px 8px;
+    }
+    
+    .hero_anchor_knowmore{
+        padding: 16px 8px; 
+    }
+    .hero_anchor{
+        padding: 6px 7px;
+    }
+}

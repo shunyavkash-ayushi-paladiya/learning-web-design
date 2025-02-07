@@ -82,7 +82,7 @@ body {
 
 .hamburger-anchor{
     text-decoration: none;
-    color: var(--theme-white);
+    color: var(--theme-black);
     display: none;
 }
 

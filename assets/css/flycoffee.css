@@ -63,7 +63,7 @@ body {
 
 .headerunorderlist li{
     border-bottom: 2px solid transparent;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .headerunorderlist li:hover{
@@ -76,7 +76,7 @@ body {
     font-size: 14px;
     color: #ffffff;
     font-weight: 400;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .header .menu-btn {
