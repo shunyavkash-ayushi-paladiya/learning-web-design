@@ -1,3 +1,38 @@
+@media screen and (max-width:1024px) {
+    .swiper-head{
+        font-size: 45px;
+        letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width:780px){
+    .logo img{
+        width: 96px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .cards-inner{
+        margin-top: 500px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+     }
+     .card_price span::after{
+        border-top: 1px dashed #666;
+        display: block;
+        position: relative;
+        top: 19px;
+        width:65%;
+        content: "";
+        right: 0;
+     }
+     .swiper-head{
+        font-size: 37px;
+    }
+}
+
 @media screen and (max-width:575px) {
    
     .headerunorderlist {
@@ -34,77 +69,36 @@
     }
 }
 
-@media screen and (max-width:780px){
-    .swiper-head {
+@media screen and (max-width:557px) {
+    .swiper-head{
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width:575px) and (min-width:320px){
+    .swiper-head{
+        letter-spacing: 3px;
+        font-size: 38px;
+    }
+    .head-heading {
+        letter-spacing: 4px;
         font-size: 30px;
+        font-weight: 500;
     }
-    .swiper-text{
-        top: 36%;
-        left: 22%;
+    .swap-head {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 6px;
     }
-    .logo img{
-        width: 96px;
+    .card_para strong {
+        font-size: 20px;
     }
-}
-
-@media screen and (max-width:628px) and (min-width:575px) {
-    .swiper-text{
-        left: 23%;
+    .card_price{
+        font-size: 18px;
     }
-    .swiper-head {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .swiper-text {
-        top: 55%;
-        left: 15%;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .swiper-text {
-        top: 66%;
-        left: 8%;
-    }
-}
-
-@media screen and (max-width:562px) {
-    .swiper-head {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:1140px) and (min-width:1024px){
-    .swiper-text{
-        left: 27%;
-    }
-}
-
-@media screen and (max-width:1024px) and (min-width:768px) {
-    .swiper-text {
-        left: 18%;
-    }
-}
-
-
-@media screen and (max-width:768px) {
     .cards-inner{
-        margin-top: 500px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-     }
-     .card_price span::after{
-        border-top: 1px dashed #666;
-        display: block;
-        position: relative;
-        top: 19px;
-        width:65%;
-        content: "";
-        right: 0;
-     }
+        gap: 53px;
+    }
 }
 
 
