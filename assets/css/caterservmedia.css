@@ -2,9 +2,6 @@
     .header_booknow{
         display: none;
     }
-    .header-inner{
-        gap: 20px;
-    }
 }
 
 @media screen and (max-width:842px) and (min-width:768px) {
@@ -15,6 +12,10 @@
         padding: 18px 30px;
     }
     
+    .header_search{
+        display: none;
+    }
+
     .hero_anchor_knowmore{
         padding: 18px 30px; 
     }
