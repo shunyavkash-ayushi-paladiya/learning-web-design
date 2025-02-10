@@ -525,3 +525,18 @@ a{
 .videos_images{
     overflow: hidden;
 }
+
+.banner{
+    background-image: url(../images/ai-generative-neon-illuminated-futuristic-backdrop-realistic-image-ultra-hd-high-design-very-detailed-free-photo.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.banner_inner{
+    margin-top: 100px;
+}
+
+.banner_text{
+    text-align: end;
+}
