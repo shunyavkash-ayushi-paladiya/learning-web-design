@@ -243,6 +243,11 @@ a{
     transition: all 0.3s ease;
     display: inline-block;
 }
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    /* opacity: var(--swiper-pagination-bullet-opacity, 1); */
+    background:  var(--theme-white);
+}
   
 .swiper_a:hover{
     color: var(--theme-red);
